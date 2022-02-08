@@ -39,7 +39,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /* page-header */
@@ -292,8 +291,25 @@ ul {
 .contacts-bottom .link:focus {
   color: var(--accent-color);
 }
-/* Filter portfolio */
+/* Page Portfolio */
+
+/* Filter Portfolio */
+.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter .button {
+  border-radius: 4px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -302,18 +318,34 @@ ul {
   cursor: pointer;
 }
 .filter .button:active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 .filter .button:focus,
 .filter .button:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 /* Works */
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works-list .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.works-list .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 .works-list .link {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 .works-list .title {
   font-weight: 700;
