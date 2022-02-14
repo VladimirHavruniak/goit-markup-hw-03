@@ -40,6 +40,18 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* page-header */
 
@@ -133,11 +145,14 @@ ul {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
+
   background-color: #2f303a;
 }
+.hero .centered {
+  text-align: center;
+}
 .hero .title {
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -186,9 +201,7 @@ ul {
   text-align: center;
   color: var(--primary-title-color);
 }
-.section-title.none {
-  display: none;
-}
+
 /* Benefits */
 .benefits-list {
   display: flex;
@@ -222,6 +235,9 @@ ul {
 .work-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.work-list .image {
+  display: block;
+}
 /* Workers */
 .workers-list {
   display: flex;
@@ -238,6 +254,7 @@ ul {
 }
 .workers-list .title {
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -246,12 +263,14 @@ ul {
 }
 .workers-list .image {
   margin-bottom: 30px;
+  display: block;
 }
 
 .workers-list .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  text-align: center;
 }
 .button {
   background-color: var(--accent-color);
