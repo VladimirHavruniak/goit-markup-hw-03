@@ -28,6 +28,9 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+img {
+  display: block;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -235,9 +238,7 @@ ul {
 .work-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-.work-list .image {
-  display: block;
-}
+
 /* Workers */
 .workers-list {
   display: flex;
@@ -252,6 +253,10 @@ ul {
 .workers-list .item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+.description-workers {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .workers-list .title {
   margin-bottom: 10px;
   text-align: center;
@@ -261,11 +266,6 @@ ul {
   line-height: 1.19;
   color: var(--primary-title-color);
 }
-.workers-list .image {
-  margin-bottom: 30px;
-  display: block;
-}
-
 .workers-list .text {
   font-weight: 400;
   font-size: 16px;
@@ -367,9 +367,6 @@ ul {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-}
-.works-list .image {
-  display: block;
 }
 .works-border {
   border-bottom: 1px solid var(--secondary-border-color);
